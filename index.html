@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Consent Popup</title>
+  <style>
+    /* Estilos básicos apenas para visualização */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .cookie-popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      display: none; /* Inicialmente oculto */
+      z-index: 1000;
+    }
+    .cookie-popup.active {
+      display: block; /* Mostra o popup quando ativo */
+    }
+    .hidden {
+    display: none;
+    }
+    .cookie-popup p {
+      margin: 0 0 10px;
+    }
+    .cookie-popup button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .cookie-popup button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <!-- Estrutura do popup -->
+  <div class="cookie-popup" id="cookiePopup">
+    <p>We use cookies to improve your experience. By clicking "Accept", you consent to our cookie policy.</p>
+    <button id="acceptCookie">I Like Cookies!</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
